@@ -331,11 +331,29 @@
         }
 
         .hero-motto {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.55);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 0.9rem 1rem;
+            background: rgba(61,184,184,0.1);
+            border-left: 3px solid var(--teal-light);
+            border-radius: 0 8px 8px 0;
+        }
+
+        .hero-motto-latin {
+            font-size: 0.82rem;
+            color: rgba(255,255,255,0.75);
             font-style: italic;
             letter-spacing: 0.02em;
-            margin-bottom: 1.25rem;
+            line-height: 1.5;
+        }
+
+        .hero-motto-trans {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.45);
+            margin-top: 0.2rem;
+            letter-spacing: 0.01em;
         }
 
         .hero-desc {
@@ -1592,7 +1610,12 @@
                     k <em>pohybu</em><br>
                     a zdraví
                 </h1>
-                <p class="hero-motto">sanitas est bonum non cognitum nisi perditum</p>
+                <div class="hero-motto">
+                    <div>
+                        <div class="hero-motto-latin">sanitas est bonum non cognitum nisi perditum</div>
+                        <div class="hero-motto-trans">zdraví je dobro, které neznáme, dokud ho neztratíme</div>
+                    </div>
+                </div>
                 <p class="hero-desc">
                     Profesionální péče o váš pohybový systém. Individuální přístup, moderní techniky a ověřené rehabilitační metody na jednom místě.
                 </p>
